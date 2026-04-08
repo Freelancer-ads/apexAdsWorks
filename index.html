@@ -1,3 +1,7 @@
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,13 +23,11 @@
       s.parentNode.insertBefore(t,s)}(window, document,'script',
       'https://connect.facebook.net/en_US/fbevents.js');
 
-      // 1. DISABLE AUTOMATIC TRACKING (Prevents Meta from guessing button clicks)
+      // Meta Pixel Setup
       fbq('set', 'autoConfig', false, '2009170129977092'); 
-      
       fbq('init', '2009170129977092'); 
       fbq('track', 'PageView');
 
-      // 2. MANUAL SUBSCRIBE TRACKING
       function trackTelegramSubscribe() {
         fbq('track', 'Subscribe', {
           content_name: 'Telegram Community',
@@ -34,50 +36,61 @@
       }
     </script>
 
-    <nav class="p-6 text-center">
+    <nav class="pt-8 pb-4 text-center">
         <img src="l1.jpg" alt="Logo" 
-             class="h-[180px] w-[180px] rounded-full object-cover 
-                    border-b-[10px] border-r-[10px] border-blue-400
-                    drop-shadow-[12px_12px_25px_rgba(59,130,246,0.6)] mb-6 mx-auto">
+             class="h-[140px] w-[140px] rounded-full object-cover 
+                    border-4 border-blue-500 shadow-lg mb-4 mx-auto">
+        
+        <div class="flex justify-center mb-2">
+            <span class="bg-red-600 text-white text-xs font-bold px-4 py-1 rounded-full uppercase tracking-widest animate-pulse shadow-md">
+                FREE HACK
+            </span>
+        </div>
     </nav>
 
-    <main class="max-w-xl mx-auto px-6 py-4">
+    <main class="max-w-xl mx-auto px-6">
         <div class="text-center mb-8">
-            <h1 class="text-4xl font-black mb-4 tracking-tight">Exclusive Daily Updates & Signals</h1>
-            <p class="text-gray-500 text-lg mb-8">Join over 5,000+ members receiving real-time insights directly on Telegram.</p>
+            <h1 class="text-3xl md:text-4xl font-black mb-2 tracking-tight leading-tight uppercase">
+                100% Working Full Result
+            </h1>
+            <h2 class="text-xl md:text-2xl font-bold text-blue-600 mb-4 uppercase">
+                100% Loss Recover
+            </h2>
+            <div class="bg-yellow-100 border-l-4 border-yellow-500 p-3 rounded-lg inline-block">
+                <p class="text-yellow-800 font-bold">
+                    🎁 Free Gift Code Included!
+                </p>
+            </div>
+        </div>
+
+        <div class="text-center mb-10">
+            <p class="text-lg font-bold mb-3 flex items-center justify-center gap-2">
+                CLICK HERE TO JOIN <span class="text-2xl animate-bounce">👇</span>
+            </p>
             
             <a href="https://t.me/+mCiLOA6R2ck1MGU1" 
                onclick="trackTelegramSubscribe()" 
                target="_blank"
-               class="flex items-center justify-center gap-3 w-full bg-blue-500 hover:bg-blue-600 text-white font-bold py-5 rounded-2xl shadow-xl transition-all transform hover:scale-[1.02] active:scale-95 text-xl">
-                <i data-lucide="send" class="w-6 h-6"></i>
-                Subscribe to Telegram
+               class="flex items-center justify-center gap-3 w-full bg-[#24A1DE] hover:bg-[#1e87bb] text-white font-black py-5 rounded-2xl shadow-[0_10px_25px_rgba(36,161,222,0.5)] transition-all transform hover:scale-[1.03] active:scale-95 text-2xl uppercase italic">
+                <i data-lucide="send" class="w-8 h-8"></i>
+                Join Telegram
             </a>
         </div>
 
-        <div class="grid grid-cols-1 gap-4 mb-10">
-            <div class="bg-white p-5 rounded-2xl shadow-sm border border-gray-100 flex items-center">
-                <div class="bg-blue-50 p-2 rounded-lg mr-4">
-                    <i data-lucide="check-circle-2" class="text-blue-500 w-6 h-6"></i>
-                </div>
-                <p class="font-semibold text-gray-700">Real-time alerts and notifications</p>
+        <div class="grid grid-cols-2 gap-4 mb-10">
+            <div class="relative">
+                <img src="Hero1.jpg" alt="Result 1" class="rounded-2xl w-full h-44 object-cover shadow-md border-2 border-white">
+                <span class="absolute top-2 left-2 bg-green-500 text-white text-[10px] font-bold px-2 py-0.5 rounded">VERIFIED</span>
             </div>
-            
-            <div class="bg-white p-5 rounded-2xl shadow-sm border border-gray-100 flex items-center">
-                <div class="bg-blue-50 p-2 rounded-lg mr-4">
-                    <i data-lucide="shield-check" class="text-blue-500 w-6 h-6"></i>
-                </div>
-                <p class="font-semibold text-gray-700">Zero spam, high-quality content only</p>
+            <div class="relative">
+                <img src="Hero2.jpg" alt="Result 2" class="rounded-2xl w-full h-44 object-cover shadow-md border-2 border-white">
+                <span class="absolute top-2 left-2 bg-green-500 text-white text-[10px] font-bold px-2 py-0.5 rounded">SUCCESS</span>
             </div>
         </div>
 
-        <div class="grid grid-cols-2 gap-3 mb-12">
-            <img src="Hero1.jpg" alt="Feature 1" class="rounded-2xl w-full h-40 object-cover shadow-sm">
-            <img src="Hero2.jpg" alt="Feature 2" class="rounded-2xl w-full h-40 object-cover shadow-sm">
-        </div>
-
-        <div class="text-center py-8 border-t border-gray-200">
-            <div class="text-4xl font-mono font-black text-red-500" id="timer">
+        <div class="text-center py-8 bg-white rounded-3xl shadow-md border border-gray-100 mb-12">
+            <p class="text-gray-400 text-xs font-bold uppercase mb-2 tracking-widest">Time Remaining to Claim Hack</p>
+            <div class="text-5xl font-mono font-black text-red-600 tabular-nums" id="timer">
                 14:59
             </div>
         </div>
@@ -86,13 +99,18 @@
     <script>
         lucide.createIcons();
 
+        // Timer Logic
         let time = 899; 
         const timerElement = document.getElementById('timer');
-        setInterval(() => {
+        const countdown = setInterval(() => {
             let minutes = Math.floor(time / 60);
             let seconds = time % 60;
             timerElement.innerHTML = `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
-            if(time > 0) time--;
+            if(time <= 0) {
+                clearInterval(countdown);
+            } else {
+                time--;
+            }
         }, 1000);
     </script>
 
